@@ -6,7 +6,8 @@ const BookSchema = new Schema<IBook>({
   author: { type: String, required: true },
   genre: { type: String, required: true },
   publicationDate: { type: String, required: true },
-  Reviews:{type:String}
+  reviews: { type: String },
+  image:{type: String}
 })
 
 export const Book=mongoose.model('Book',BookSchema);
